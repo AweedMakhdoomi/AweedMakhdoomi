@@ -1,0 +1,15 @@
+#guess the animal!
+
+def main():
+    guess = get_guess()
+    if guess == "Lion":
+        print("correct!")
+    else:
+        print("incorrect!")
+        main()
+
+def get_guess():
+    guess = input("Guess any animal: ").title()
+    return guess
+
+main()
