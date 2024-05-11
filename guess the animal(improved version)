@@ -1,0 +1,28 @@
+#Game of guess the animal!(improved version)
+def main():
+    guess = get_guess()
+    if guess == "Lion":
+        print("correct!")
+    else:
+        print("incorrect!")
+        print(f"Hint:It's a wild animal!, {name}!")
+        main()
+
+def get_guess():
+    guess = input("Guess any animal: ").title()
+    return guess
+    
+    
+    
+print("Hello, We will be playing a game of guess the animal.")
+play = input("Do you want to play, yes/no: ")
+if "yes" in play:
+     name = input("What's your first name? ").title().strip()
+     print(f"Let's play, {name}!")
+     main()
+    
+else:
+   print("bye")
+
+
+
